@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEPEPE</title>
+    <link id='-gd-engine-icon' rel='icon' type='image/png' href='src/images/icon.png' />
+    <link rel='apple-touch-icon' href='src/images/icon.png' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/druktextwidecyr-medium.css">
+    <link rel="stylesheet" href="src/styles/pixieserif-regular.css">
+    <link rel="stylesheet" href="src/styles/preloader.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="bg-video">
+        <video src="src/images/background-video.mp4" autoplay="autoplay" muted loop id="desktop-video"></video>
+        <video src="src/images/background-video-mobile.mp4" autoplay="autoplay" video autoplay loop muted playsinline webkit-playinginline id="mobile-video"></video>
+    </div>
+    <div class="dark"></div>
+    <div class="content">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="src/images/logotype.svg" alt="PEPEPE" width="98" height="98">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel" style="height: 100%;">
+                        <div class="offcanvas-header container">
+                            <a class="navbar-brand" href="#">
+                                <img src="src/images/logotype.svg" alt="PEPEPE" width="98" height="98">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body justify-content-end container">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PEPENOMICS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://etherscan.io/token/0xb364fcbf317a3ff8b57ea0de9ab58520743fb1fe">CONTRACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <div class="container-content">
+                        <div class="content-title">
+                            <div class="title">PEPE</div>
+                            <div class="PS2p">PE</div>
+                        </div>
+                        <p class="content-subtitle">
+                            PEPEPE is a P2E (play-to-earn) game where players can control a 3D PEPE
+                            character and engage in various activities to earn cryptocurrency. The game is a virtual
+                            world
+                            where players can communicate with each other, participate in activities, buy and sell items
+                            with in-game currency.
+                        </p>
+                        <p class="content-subtitle">
+                            PEPE is the main character of the game, which can be along with other players. He can
+                            participate in various quests, games and battles to earn cryptocurrency. In addition,
+                            players
+                            can create their own missions and quests for other players to participate in and earn
+                            rewards.
+                        </p>
+                        <div class="block-contract">
+                            <a class="btn-link" href="game/index.html">
+                                <button class="btn">PLAY</button>
+                            </a>
+                            <div class="contract-container">
+                                <span id="toCopy-one">0xb364fcbf317a3ff8b57ea0de9ab58520743fb1fe</span>
+                                <img src="src/images/copy-icon.svg" onclick="Copy('toCopy-one')" title="Copy">
+                            </div>
+                        </div>
+                        <div class="block-contacts">
+                            <a href="https://t.me/pepepepeth">
+                                <button class="btn">TELEGRAM</button>
+                            </a>
+                            <a href="https://twitter.com/pepepepeth">
+                                <button class="btn">TWITTER</button>
+                            </a>
+                            <a href="https://medium.com/@pepepepeth">
+                                <button class="btn">BLOG</button>
+                            </a>
+                            <a
+                                href="https://www.dextools.io/app/en/ether/pair-explorer/0xB364FCBf317A3ff8B57EA0dE9Ab58520743Fb1fe">
+                                <button class="btn">CHART</button>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="src/images/pepe-img.png" alt="PEPEPE" class="container-img">
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="src/scripts/script.js"></script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
